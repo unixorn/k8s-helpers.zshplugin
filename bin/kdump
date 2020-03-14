@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-exec kubectl get all --all-namespaces
+kubectl get all --all-namespaces
+echo
+kubectl get nodes

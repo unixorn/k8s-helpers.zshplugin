@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# Copyright 2019, Joe Block <jpb@unixorn.net>
+#
+# License: Apache 2.0. See LICENSE in this repository for details.
+#
+# Dump the path to a HostPath persistent volume
+
+exec kubectl get pv -o=jsonpath='{.spec.hostPath.path}' ${1}
