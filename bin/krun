@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+# Run something in a busybox pod inside k8s
+#
+# Copyright 2020, Joe Block <jpb@unixorn.net>
+
+exec kubectl run krun --image=debian:buster-slim --rm -it --restart=Never $@
