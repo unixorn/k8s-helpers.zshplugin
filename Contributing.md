@@ -4,8 +4,8 @@
 
 ## Contribution Guidelines
 
-- **To add a helper script:** Submit a pull request. Please use `#!/usr/bin/env interpreter` instead of a direct path to the interpreter, this makes it easier for people to use more recent versions when the ones packaged with their OS (macOS and CentOS, I'm looking at you) are stale.
-- **To remove a script:** All of the scripts here were either taken from blog posts or had an Open Source license. That said, if you wrote something included here and want it removed, either open an issue to discuss the removal or submit a pull request.
+- **To add a helper script:** Submit a pull request. Please use `#!/usr/bin/env interpreter` instead of a direct path to the interpreter, this makes it easier for people to use more recent versions when the ones packaged with their OS (Not naming names, but macOS, Red Hat and CentOS, I'm looking at you) are stale.
+- **To remove a script:** All of the scripts here have an Open Source license. That said, if you wrote something included here and want it removed, either open an issue to request a removal or submit a pull request.
 
 For each script you add, please:
 * Include an entry in the credits section of `README.md` for any scripts in your PRs so authors get their work credited correctly.

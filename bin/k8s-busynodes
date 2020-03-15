@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#
+# List your k8s nodes by the number of pods running on them.
+#
+# Copyright 2020, Joe Block <jpb@unixorn.net>
+#
+# License: Apache 2.0. See LICENSE in this repository for details.
+
+set -o pipefail
+
+kubectl get pods -o json --all-namespaces |
+  jq '.items | group_by(.spec.nodeName) | map({"nodeName": .[0].spec.nodeName, "count": length}) | sort_by(.count)| reverse'

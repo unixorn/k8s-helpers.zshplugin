@@ -3,5 +3,7 @@
 # Run something in a busybox pod inside k8s
 #
 # Copyright 2020, Joe Block <jpb@unixorn.net>
+#
+# License: Apache 2.0. See LICENSE in this repository for details.
 
 exec kubectl run krun --image=debian:buster-slim --rm -it --restart=Never $@

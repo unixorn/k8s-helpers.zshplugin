@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+#
+# Dump a bunch of information about a cluster
+#
+# Copyright 2020, Joe Block <jpb@unixorn.net>
+#
+# License: Apache 2.0. See LICENSE in this repository for details.
 
 kubectl get all --all-namespaces
 echo

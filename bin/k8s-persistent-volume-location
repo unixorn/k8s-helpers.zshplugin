@@ -6,4 +6,5 @@
 #
 # Dump the path to a HostPath persistent volume
 
-exec kubectl get pv -o=jsonpath='{.spec.hostPath.path}' ${1}
+# shellcheck disable=SC2068
+exec kubectl get pv -o=jsonpath='{.spec.hostPath.path}' $@
